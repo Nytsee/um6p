@@ -1,1 +1,187 @@
-eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('$(3).1B(2(){2 a(j,k,l){4 m=2E 33;m.1m(m.1D()+1M*(A*(A*(24*l))));4 n="2H="+m.32();3.t=j+"="+k+"; "+n}2 b(j){10(4 n,k=j+"=",l=3.t.1E(";"),m=0;m<l.e;m++){10(n=l[m];" "==n.2z(0);)n=n.x(1);J(0==n.2I(k))5 n.x(k.e,n.e)}5""}2 f(){4 j=b("y");""!=j&&($("#1u").T(),$("#Z").T())}f(),$("#1F .1K, #Z .1L").7(2(){a("y","1N",1),f()}),2(){5!!/1O|1P|1Q|1R|1S|1T|1U|1V 1W/i.1X(2g.2l)}(),$("#2m").7(2(){$("6, c").u({v:$("#2F").w().g+-2J},h)}),$(".z").z(),16("#17").18({19:!1,1a:"1b:-1c",1d:1,1e:1,1f:!0,1g:!1,1h:"1i",1j:{1k:2(j,k,l,m){J(""===$("#1l").9())5 1n.1o(j.9()),m.1p.1q.1r}}}),$(".1s").1t(),$(".B").B({1v:"1w/1x/1y",1z:1,1A:[36,1C],C:{E:"G",1G:"1H\'1I",1J:["H","F\\I","q","K","L","M","N","O\\P","Q","R","S","D\\U"],1Y:["H","F\\I","q","K","L","M","N","O\\P","Q","R","S","D\\U"],1Z:["20","21","22","23","25","26","27"],28:["29","2a","2b","2c","2d","2e","2f"]}}),$(".V").V({2h:!1,2i:!0,C:{E:"G",2j:"2k"}}),$("#W, #X").2n(2(){4 j=$("#W").9(),k=$("#X").9();$(".2o").9(j+" "+k)}),$(".2p-Y").7(2(){5!1}),$("#2r").7(2(){$(".2s").2t(2u);5 $("6, c").u({v:$("#Y").w().g},h),!1}),$("#2v").7(2(){4 j=$("#2w").6(),k=$("<2x />");k[0].2y="o",k.d({2A:"2B",g:"-2C"}),$("c").2D(k);4 l=k[0].11?k[0].11:k[0].p.3?k[0].p.3:k[0].p;l.3.2G(),l.3.8("<6><12><13>2K\'s / D\\2L 2M 2N 2O r\\2P\\2Q 2R 2S</13>"),l.3.8("</12><c>"),l.3.8("<2T 2U=\\"d/2V.d\\" 2W=\\"2X\\" 2Y=\\"2Z/d\\" />"),l.3.8(j),l.3.8("</c></6>"),l.3.30(),31(2(){14.15.o.34(),14.15.o.35(),k.2q()},h)})});',62,193,'||function|document|var|return|html|click|write|val|||body|css|length||top|500|||||||frame1|contentDocument|Mars|||cookie|animate|scrollTop|offset|substring|username|parallax|60|datepicker|i18n||cancel||Annuler|Janvier|xE9vrier|if|Avril|Mai|Juin|Juillet|Ao|xFBt|Septembre|Octobre|Novembre|hide|xE9cembre|timepicker|datevisite|heurevisite|container|cookies_cont_top|for|contentWindow|head|title|window|frames|jQuery|formID|validationEngine|ajaxFormValidation|promptPosition|bottomRight|153|showOneMessage|maxErrorsPerField|binded|scroll|ajaxFormValidationMethod|post|customFunctions|checkCountry|country|setTime|console|log|allrules|required|alertTextListe|nytList|formSelect|cookies_cont|format|dd|mm|yyyy|firstDay|yearRange|ready|2018|getTime|split|cookies_box|today|aujourd|hui|monthsShort|closeCookies|closeCookiTop|1e3|cpige|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera|Mini|test|months|weekdaysShort|Dim|Lun|Mar|Mer||Jeu|Ven|Sam|weekdaysAbbrev|Di|Lu|Ma|Me|Je|Ve|Sa|navigator|twelveHour|vibrate|done|Ok|userAgent|backToForm|change|dateRDV|selects|remove|callToaction|detailMaster|show|300|printThis|printArea|iframe|name|charAt|position|absolute|1000000px|append|new|formContainer|open|expires|indexOf|100|McDonald|xE9tails|de|la|personne|xE9cup|xE9rant|le|gain|link|href|style|rel|stylesheet|type|text|close|setTimeout|toGMTString|Date|focus|print|1970'.split('|'),0,{}))
+$(document).ready(function() {
+    
+    function setCookie(cname,cvalue,exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays*24*60*60*1000));
+        var expires = "expires=" + d.toGMTString();
+        document.cookie = cname+"="+cvalue+"; "+expires;
+    }
+    
+    function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0; i<ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1);
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+    
+    function checkCookie() {
+        var user=getCookie("username");
+        if (user != "") {
+            //alert("Welcome again " + user);
+            $("#cookies_cont").hide();
+            $("#cookies_cont_top").hide();
+        } else {
+          /*user = prompt("Please enter your name:","");
+           if (user != "" && user != null) {
+               setCookie("username", user, 1);
+           }*/
+        }
+    }
+    
+    
+    function deletecookie( name ) {
+      setCookie("username", "", -1);
+    }
+    
+    
+      checkCookie();
+      $("#cookies_box .closeCookies, #cookies_cont_top .closeCookiTop").click(function(){
+        setCookie("username", "cpige", 1);
+        checkCookie();
+      })
+    
+    
+    function isMobile() {
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    
+    
+    if(isMobile()){
+    }
+    
+    
+    
+
+
+$("#backToForm").click(function() {
+    var offset = -30; //Offset of 20px
+
+    $('html, body').animate({
+        scrollTop: $("#dataFormations").offset().top + offset
+    }, 500);
+});
+
+
+ $('.parallax').parallax();
+
+    
+    
+      jQuery("#formID").validationEngine({
+        ajaxFormValidation: false,
+        promptPosition : "bottomRight:-153",
+        showOneMessage : 1,
+        maxErrorsPerField: 1,
+        binded: true,
+    
+         // promptPosition : "topLeft:+20",
+        scroll: false,
+        ajaxFormValidationMethod: 'post',
+          'customFunctions': {
+              'checkCountry': function (field, rules, i, options){
+                //alert($("#mychamps").val())
+                    if ($('#country').val() === '') {
+                      console.log(field.val())
+                        return options.allrules.required.alertTextListe;
+                    }
+                
+                  //alert("ok")
+                 // console.log(rules)
+              }
+          }
+        /*onAjaxFormComplete: ajaxValidationCallback*/
+      })
+    
+    
+  
+      $('.nytList').formSelect();
+      
+              $('.datepicker').datepicker({
+                  format : 'dd/mm/yyyy',
+                  firstDay: 1,
+                  yearRange : [1970,2018],
+                  'i18n' : {
+                       cancel : 'Annuler',
+                       today: 'aujourd\'hui',
+                       monthsShort: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
+                       months: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
+                       weekdaysShort: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],
+                       weekdaysAbbrev	: ['Di','Lu','Ma','Me','Je','Ve','Sa']
+                       
+                  }
+              });
+              $('.timepicker').timepicker({
+                  twelveHour : false,
+                  vibrate : true,
+      
+                  'i18n' : {
+                       cancel : 'Annuler',
+                       done : 'Ok'
+                  }
+              });
+      
+      
+              $("#datevisite, #heurevisite").change(function() { 
+                var datevisite = $("#datevisite").val();
+                var heurevisite = $("#heurevisite").val();
+                $(".dateRDV").val(datevisite+" "+heurevisite)
+               });
+      
+               $(".selects-container").click(function(e){
+                 return false;
+               })
+    
+
+                
+    $("#callToaction").click(function(){
+       $(".detailMaster").show(300);
+            var offset = -100; //Offset of 20px
+
+            $('html, body').animate({
+                scrollTop: $("#container").offset().top
+            }, 500);
+       return false;
+    })
+
+
+
+    $("#printThis").click(function () {
+        var contents = $("#printArea").html();
+        var frame1 = $('<iframe />');
+        frame1[0].name = "frame1";
+        frame1.css({ "position": "absolute", "top": "-1000000px" });
+        $("body").append(frame1);
+        var frameDoc = frame1[0].contentWindow ? frame1[0].contentWindow : frame1[0].contentDocument.document ? frame1[0].contentDocument.document : frame1[0].contentDocument;
+        frameDoc.document.open();
+        //Create a new HTML document.
+        frameDoc.document.write('<html><head><title>McDonald\'s / Détails de la personne récupérant le gain</title>');
+        frameDoc.document.write('</head><body>');
+        //Append the external CSS file.
+        frameDoc.document.write('<link href="css/style.css" rel="stylesheet" type="text/css" />');
+        //Append the DIV contents.
+        frameDoc.document.write(contents);
+        frameDoc.document.write('</body></html>');
+        frameDoc.document.close();
+        setTimeout(function () {
+            window.frames["frame1"].focus();
+            window.frames["frame1"].print();
+            frame1.remove();
+        }, 500);
+    });
+
+    
+            });
+    
+    
+    
+    
