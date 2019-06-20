@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "/home3/um6p/public_html/esafe/xls"
+AuthUserFile "/home3/um6p/.htpasswds/public_html/esafe/xls/passwd"
+require valid-user

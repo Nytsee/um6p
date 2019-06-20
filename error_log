@@ -1,0 +1,43 @@
+[01-Aug-2018 12:48:59 Africa/Casablanca] PHP Parse error:  syntax error, unexpected '{' in /home3/um6p/public_html/esafe/index.php on line 71
+[01-Aug-2018 12:49:02 Africa/Casablanca] PHP Parse error:  syntax error, unexpected '{' in /home3/um6p/public_html/esafe/index.php on line 71
+[01-Aug-2018 12:49:29 Africa/Casablanca] PHP Parse error:  syntax error, unexpected '=' in /home3/um6p/public_html/esafe/index.php on line 72
+[01-Aug-2018 12:49:31 Africa/Casablanca] PHP Parse error:  syntax error, unexpected '=' in /home3/um6p/public_html/esafe/index.php on line 72
+[01-Aug-2018 12:49:31 Africa/Casablanca] PHP Parse error:  syntax error, unexpected '=' in /home3/um6p/public_html/esafe/index.php on line 72
+[01-Aug-2018 12:49:31 Africa/Casablanca] PHP Parse error:  syntax error, unexpected '=' in /home3/um6p/public_html/esafe/index.php on line 72
+[01-Aug-2018 12:51:17 Africa/Casablanca] PHP Parse error:  syntax error, unexpected '{' in /home3/um6p/public_html/esafe/index.php on line 71
+[01-Aug-2018 12:51:18 Africa/Casablanca] PHP Parse error:  syntax error, unexpected '{' in /home3/um6p/public_html/esafe/index.php on line 71
+[01-Aug-2018 12:51:18 Africa/Casablanca] PHP Parse error:  syntax error, unexpected '{' in /home3/um6p/public_html/esafe/index.php on line 71
+[01-Aug-2018 12:51:18 Africa/Casablanca] PHP Parse error:  syntax error, unexpected '{' in /home3/um6p/public_html/esafe/index.php on line 71
+[01-Aug-2018 12:51:18 Africa/Casablanca] PHP Parse error:  syntax error, unexpected '{' in /home3/um6p/public_html/esafe/index.php on line 71
+[01-Aug-2018 12:52:23 Africa/Casablanca] PHP Parse error:  syntax error, unexpected '=' in /home3/um6p/public_html/esafe/index.php on line 72
+[01-Aug-2018 12:52:25 Africa/Casablanca] PHP Parse error:  syntax error, unexpected '=' in /home3/um6p/public_html/esafe/index.php on line 72
+[01-Aug-2018 12:52:25 Africa/Casablanca] PHP Parse error:  syntax error, unexpected '=' in /home3/um6p/public_html/esafe/index.php on line 72
+[01-Aug-2018 12:52:57 Africa/Casablanca] PHP Parse error:  syntax error, unexpected '=' in /home3/um6p/public_html/esafe/index.php on line 72
+[01-Aug-2018 12:52:58 Africa/Casablanca] PHP Parse error:  syntax error, unexpected '=' in /home3/um6p/public_html/esafe/index.php on line 72
+[01-Aug-2018 12:52:59 Africa/Casablanca] PHP Parse error:  syntax error, unexpected '=' in /home3/um6p/public_html/esafe/index.php on line 72
+[01-Aug-2018 12:52:59 Africa/Casablanca] PHP Parse error:  syntax error, unexpected '=' in /home3/um6p/public_html/esafe/index.php on line 72
+[01-Aug-2018 12:53:05 Africa/Casablanca] PHP Parse error:  syntax error, unexpected '=' in /home3/um6p/public_html/esafe/index.php on line 72
+[01-Aug-2018 12:53:49 Africa/Casablanca] PHP Parse error:  syntax error, unexpected '=' in /home3/um6p/public_html/esafe/index.php on line 72
+[01-Aug-2018 12:53:51 Africa/Casablanca] PHP Parse error:  syntax error, unexpected '=' in /home3/um6p/public_html/esafe/index.php on line 72
+[01-Aug-2018 12:53:52 Africa/Casablanca] PHP Parse error:  syntax error, unexpected '=' in /home3/um6p/public_html/esafe/index.php on line 72
+[01-Aug-2018 12:53:52 Africa/Casablanca] PHP Parse error:  syntax error, unexpected '=' in /home3/um6p/public_html/esafe/index.php on line 72
+[01-Aug-2018 12:53:56 Africa/Casablanca] PHP Parse error:  syntax error, unexpected '=' in /home3/um6p/public_html/esafe/index.php on line 72
+[01-Aug-2018 12:55:19 Africa/Casablanca] PHP Parse error:  syntax error, unexpected '=' in /home3/um6p/public_html/esafe/index.php on line 72
+[01-Aug-2018 12:55:22 Africa/Casablanca] PHP Parse error:  syntax error, unexpected '=' in /home3/um6p/public_html/esafe/index.php on line 72
+[01-Aug-2018 12:55:22 Africa/Casablanca] PHP Parse error:  syntax error, unexpected '=' in /home3/um6p/public_html/esafe/index.php on line 72
+[01-Aug-2018 12:55:23 Africa/Casablanca] PHP Parse error:  syntax error, unexpected '=' in /home3/um6p/public_html/esafe/index.php on line 72
+[01-Aug-2018 12:55:23 Africa/Casablanca] PHP Parse error:  syntax error, unexpected '=' in /home3/um6p/public_html/esafe/index.php on line 72
+[01-Aug-2018 12:55:23 Africa/Casablanca] PHP Parse error:  syntax error, unexpected '=' in /home3/um6p/public_html/esafe/index.php on line 72
+[01-Aug-2018 12:55:24 Africa/Casablanca] PHP Parse error:  syntax error, unexpected '=' in /home3/um6p/public_html/esafe/index.php on line 72
+[01-Aug-2018 13:24:18 Africa/Casablanca] PHP Warning:  include(../config.php): failed to open stream: No such file or directory in /home3/um6p/public_html/esafe/dopost.php on line 2
+[01-Aug-2018 13:24:18 Africa/Casablanca] PHP Warning:  include(../config.php): failed to open stream: No such file or directory in /home3/um6p/public_html/esafe/dopost.php on line 2
+[01-Aug-2018 13:24:18 Africa/Casablanca] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home3/um6p/public_html/esafe/dopost.php on line 2
+[01-Aug-2018 13:24:18 Africa/Casablanca] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home3/um6p/public_html/esafe/dopost.php on line 5
+[01-Aug-2018 13:24:18 Africa/Casablanca] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home3/um6p/public_html/esafe/dopost.php on line 6
+[01-Aug-2018 13:24:18 Africa/Casablanca] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home3/um6p/public_html/esafe/dopost.php on line 7
+[01-Aug-2018 13:24:18 Africa/Casablanca] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home3/um6p/public_html/esafe/dopost.php on line 8
+[01-Aug-2018 13:24:18 Africa/Casablanca] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home3/um6p/public_html/esafe/dopost.php on line 9
+[01-Aug-2018 13:24:18 Africa/Casablanca] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home3/um6p/public_html/esafe/dopost.php on line 10
+[01-Aug-2018 13:24:18 Africa/Casablanca] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home3/um6p/public_html/esafe/dopost.php on line 11
+[01-Aug-2018 13:24:18 Africa/Casablanca] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/um6p/public_html/esafe/dopost.php on line 31
+[01-Aug-2018 13:24:18 Africa/Casablanca] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/um6p/public_html/esafe/dopost.php on line 32
